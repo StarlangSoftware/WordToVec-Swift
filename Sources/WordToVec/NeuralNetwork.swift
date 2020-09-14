@@ -10,7 +10,7 @@ import Math
 import Corpus
 import Dictionary
 
-class NeuralNetwork{
+public class NeuralNetwork{
     
     private var __wordVectors: Matrix
     private var __wordVectorUpdate: Matrix
