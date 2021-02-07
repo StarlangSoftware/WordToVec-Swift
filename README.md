@@ -40,3 +40,14 @@ Result: The imported project is listed in the Project Explorer view and files ar
 **From IDE**
 
 After being done with the downloading and opening project, select **Build** option from **Product** menu. After compilation process, user can run WordToVec-Swift.
+
+Detailed Description
+============
+
+To initialize artificial neural network:
+
+	init(corpus: Corpus, parameter: WordToVecParameter)
+
+To train neural network:
+
+	func train() -> VectorizedDictionary
