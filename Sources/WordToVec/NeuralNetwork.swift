@@ -100,7 +100,7 @@ public class NeuralNetwork{
         var currentSentence : Sentence = self.__corpus.getSentence(index: iteration.getSentenceIndex())
         let outputs = Vector(size: self.__parameter.getLayerSize(), x: 0.0)
         let outputUpdate = Vector(size: self.__parameter.getLayerSize(), x: 0)
-        self.__corpus.shuffleSentences(seed: 1)
+        self.__corpus.shuffleSentences(seed: self.__parameter.getSeed())
         while iteration.getIterationCount() < self.__parameter.getNumberOfIterations(){
             iteration.alphaUpdate()
             let wordIndex = self.__vocabulary.getPosition(word: currentSentence.getWord(index: iteration.getSentencePosition()))
@@ -177,7 +177,7 @@ public class NeuralNetwork{
         var currentSentence : Sentence = self.__corpus.getSentence(index: iteration.getSentenceIndex())
         let outputs = Vector(size: self.__parameter.getLayerSize(), x: 0.0)
         let outputUpdate = Vector(size: self.__parameter.getLayerSize(), x: 0)
-        self.__corpus.shuffleSentences(seed: 1)
+        self.__corpus.shuffleSentences(seed: self.__parameter.getSeed())
         while iteration.getIterationCount() < self.__parameter.getNumberOfIterations(){
             iteration.alphaUpdate()
             let wordIndex = self.__vocabulary.getPosition(word: currentSentence.getWord(index: iteration.getSentencePosition()))

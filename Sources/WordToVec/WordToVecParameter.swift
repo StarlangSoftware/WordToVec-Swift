@@ -16,6 +16,7 @@ public class WordToVecParameter{
     private var __hierarchicalSoftMax: Bool = false
     private var __negativeSamplingSize: Int = 5
     private var __numberOfIterations: Int = 3
+    private var __seed: Int = 1
 
     /**
     Empty constructor for Word2Vec parameter
@@ -90,6 +91,15 @@ public class WordToVecParameter{
     }
 
     /**
+    Accessor for the seed attribute.
+
+    - Returns: Seed to train the network.
+    */
+    public func getSeed() -> Int{
+        return self.__seed
+    }
+
+    /**
     Mutator for the layerSize attribute.
 
     - Parameter layerSize : New size of the word vectors.
@@ -151,4 +161,14 @@ public class WordToVecParameter{
     public func setNumberOfIterations(numberOfIterations: Int){
         self.__numberOfIterations = numberOfIterations
     }
+
+    /**
+    Mutator for the seed attribute.
+
+    - Parameter seed : New seed.
+    */
+    public func setSeed(seed: Int){
+        self.__seed = seed
+    }
+
 }
