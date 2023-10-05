@@ -16,7 +16,7 @@ Video Lectures
 
 For Developers
 ============
-You can also see [Java](https://github.com/olcaytaner/WordToVec), [Python](https://github.com/olcaytaner/WordToVec-Py), [Cython](https://github.com/olcaytaner/WordToVec-Cy), [C#](https://github.com/starlangsoftware/WordToVec-CS), [Js](https://github.com/starlangsoftware/WordToVec-Js), or [C++](https://github.com/olcaytaner/WordToVec-CPP) repository.
+You can also see [Java](https://github.com/olcaytaner/WordToVec), [Python](https://github.com/olcaytaner/WordToVec-Py), [Cython](https://github.com/olcaytaner/WordToVec-Cy), [C#](https://github.com/starlangsoftware/WordToVec-CS), [Js](https://github.com/starlangsoftware/WordToVec-Js), [C](https://github.com/starlangsoftware/WordToVec-C), or [C++](https://github.com/olcaytaner/WordToVec-CPP) repository.
 
 ## Requirements
 
